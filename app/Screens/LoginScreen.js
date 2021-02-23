@@ -28,7 +28,7 @@ const LoginScreen = ({navigation}) => {
       setloggedIn(true);
     } catch (error) {
       if (error.code === statusCodes.SIGN_IN_CANCELLED) {
-        // user cancelled the login flow
+        // user cancelled the login flow 
         alert('Cancel');
       } else if (error.code === statusCodes.IN_PROGRESS) {
         alert('Signin in progress');
